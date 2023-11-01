@@ -1,0 +1,22 @@
+#name {
+    margin-top: 50px;
+    font-family: serif;
+    text-align: center;
+    font-size: 5em;
+}
+
+#rank {
+    margin-top: 5px;
+    font-family: serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+#start {
+    /* 中央寄せするために必須! */
+    display: block;
+    margin: auto;
+    margin-top: 350px;
+    width: 300px;
+    height: 100px;
+}
