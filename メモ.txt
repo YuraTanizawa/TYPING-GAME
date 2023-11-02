@@ -11,6 +11,20 @@ Node.jsとは
 ・裏側の動的な処理やデータベースの要件定義や設計などを行う
 ・例として、会員情報登録やクレジットカード決済などの個人情報のデータを読み込む
 
+HTMLのクラスとは
+・divタグに付ける名前
 
-次にやること
-・jsでカウントダウンを作成とタイピング部分を作る
+アロー関数について
+-サンプルコード
+関数リテラルの例
+let getTriangle = function(base,height){
+ return base * height / 2;
+};
+console.log('三角形の面積は' + getTriangle(10,2));//三角形の面積は10
+
+アロー関数の例
+let getTriangle = (base, height) => {
+  return base * height / 2;
+};
+console.log('三角形の面積は' + getTriangle(10,2));//三角形の面積は10
+

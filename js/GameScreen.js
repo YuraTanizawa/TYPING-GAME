@@ -18,16 +18,23 @@ setInterval(() => {
 */
 setInterval(() => {
     if(count == 0){
+        //画面をクリア
         document.body.textContent = "";
+        //HTMLのdivタグを表している
         var newElement = document.createElement("div");
+        //表示したい文字を代入している
         newElement.textContent = "終了!"
-        document.getElementById("newElement").style.classList.add("end");
-        //newElement.classList.add("end");
+        //HTMLのdivタグに名前を追加→cssで変更することができる
+        newElement.classList.add("end");
+        //div要素がbody要素に追加される
         document.body.appendChild(newElement);
+        //処理を終了
         exit;
     }
-    document.getElementById("output").innerHTML = count;
+    var CountElement = document.createElement("div");
+    CountElement.textContent  = count;
+    CountElement.classList.add("count");
+    document.body.textContent = "";
+    document.body.appendChild(CountElement);
     count--;
 },1000)
-
-

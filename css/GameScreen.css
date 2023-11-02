@@ -1,4 +1,9 @@
 .end { 
-    text-align: center;
-    color: red;
+    font-size: 5em;
+    text-align: right;    
+}
+
+.count {
+    font-size: 5em;
+    text-align: right;
 }
