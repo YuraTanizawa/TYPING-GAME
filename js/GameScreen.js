@@ -1,4 +1,4 @@
-var count = 5;
+var count = 3;
 /* 
 setInterval(() => {
     if(count == 0){
