@@ -1,9 +1,108 @@
-.end { 
-    font-size: 5em;
-    text-align: right;    
+div.text-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.count {
-    font-size: 5em;
-    text-align: right;
+div.text-container label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 入力した文字に色を付けている */
+span.marker {
+    background-color: blueviolet;
+}
+
+div.Countdown {
+    margin-left: 60%;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+div.Timelimit {
+    margin-left: 60%;
+    font-size: 5vw;
+    font-weight: bold;
+    color: red;
+}
+
+div.Score {
+    margin-top: 70px;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+div.question {
+    display: flex;
+    font-size: 4vw;
+    /* 太字にしている */
+    font-weight: bold;
+    /* 文字間のスペースを調整している */
+    letter-spacing: 0.25em;
+    text-align: center;
+}
+
+div.japanese-question {
+    margin-top: 70px;
+    display: flex;
+    font-size: 2vw;
+    /* 太字にしている */
+    font-weight: bold;
+    /* 文字間のスペースを調整している */
+    letter-spacing: 0.23em;
+    text-align: center;
+}
+
+input.text {
+    width: 100%;
+    border: none;
+    margin-top: 2rem;
+    font-size: 2vw;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+input.text:focus, input.text:focus-visible {
+    border: none;
+    outline: none;
+}
+
+
+div.message {
+    display: block;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+p#finishResult {
+    margin-top: 150px;
+}
+
+
+
+
+button.button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+div.hidden {
+    display: none;
+}
+
+img.home {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 100px;
 }

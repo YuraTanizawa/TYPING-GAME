@@ -6,9 +6,48 @@
     <link rel="stylesheet" href="/css/GameScreen.css">
     <title>ゲーム画面</title>
 </head>
-<body>
-    <div id="output">
-        <script src="../js/GameScreen.js"></script>
+<body>  
+    <!-- ゲーム開始時の画面 -->
+    <div id="game" class="text-container">
+        <!-- 画面のどこを押してもフォーカスが当たる -->
+        <label for="inputText">
+            <!-- カウントダウンの文字を表示 -->
+            <div class="Countdown">
+                <span id="Countdown"></span>
+            </div>
+            <!-- 残り時間が3秒の時のカウントダウンの文字の表示 -->
+            <div class="Timelimit">
+                <span id="Timelimit"></span>
+            </div> 
+            <div class="Score">
+                <span id="Score"></span>
+            </div>
+            <!-- 日本語の問題文を表示させている -->
+            <div class="japanese-question">
+                <span id="japanese"></span>
+            </div>
+            <!-- タイピングの問題文を表示させている -->
+            <div class="question">
+                <!-- すでに入力されたデータ  -->
+                <!-- idはjs用で、classはcss用 --> 
+                <span id="entered" class="marker"></span>
+                <!-- まだ入力されていないデータ(問題文) -->
+                <span id="remained"></span>
+            </div>
+            <!-- autofocusで自動的にフォームに打ち込めるようになる -->
+            <input type="text" class="text" id="inputText" autofocus>
+        </label>    
     </div>
+
+    <!-- ゲーム終了時の画面 -->
+    <div id="message" class="text-container hidden">
+        <div class="message">
+            <p id="finishResult">ゲーム終了!</p><br>
+            <span id="scoreResult" class="scoreResult"></span>
+            <img src="/picture/HOME.png" alt="ホームボタン" id="home" class="home">  
+        </div>
+    </div>
+
+    <script src="../js/GameScreen.js"></script>
 </body>
 </html>

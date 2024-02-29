@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/start.css">
+    <title>開始画面</title>
+</head>
+<body>
+    <div class="name">タイピングゲーム</div>
+    <div class="rank">得点ランキング</div>
+    
+    <table class="result">
+        <td>rank</td>
+        <td>user</td>
+        <td>score</td>
+        <% rank.forEach(function (value, index) { %>
+            <tr>
+                <td><%= ++index %></td>
+                <td><%= value.name %></td>
+                <td><%= value.score %></td>
+            </tr>  
+        <% }); %>
+    </table>
+    
+    <a href="/GameScreen">
+        <img src="/picture/START.png" alt="開始ボタン" class="start">    
+    </a>
+</body>
+</html>

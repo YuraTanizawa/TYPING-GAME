@@ -1,22 +1,49 @@
-#name {
+/*
+body {
+    
+    画像ファイルの指定 
+    background-image: url(../picture/HomeScreen.png);    
+    画像を常に天地左右の中央に配置 
+    background-position: center center;
+    画像をタイル状に繰り返し表示しない
+    background-repeat: no-repeat;
+    コンテンツの高さが画像の高さより大きい時、動かないように固定 
+    background-attachment: fixed;
+    表示するコンテナの大きさに基づいて、背景画像を調整
+    background-size: cover;
+}
+*/
+
+div.name {
     margin-top: 50px;
     font-family: serif;
     text-align: center;
     font-size: 5em;
+    color: #dc143c;
 }
 
-#rank {
+div.rank {
     margin-top: 5px;
     font-family: serif;
     text-align: center;
     font-size: 2em;
+    color: #dc143c;
 }
 
-#start {
+table.result {
+    border-collapse: separate;
+    border-spacing: 30px 15px;
+    /* 中央寄せするための処理 */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+img.start {
     /* 中央寄せするために必須! */
     display: block;
     margin: auto;
-    margin-top: 350px;
+    margin-top: 100px;
     width: 300px;
     height: 100px;
 }
