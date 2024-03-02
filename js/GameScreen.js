@@ -74,7 +74,7 @@ let currentText;
 //日本語の問題の番号を入れる変数
 let japaneseText;
 //カウントダウン用の変数
-let currentCount = 3;
+let currentCount = 60;
 //得点用の変数
 let currentScore = 0;
 //最終得点用の変数 

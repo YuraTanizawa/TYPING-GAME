@@ -1,3 +1,6 @@
+参考にしたタイピングゲームの動画
+https://www.youtube.com/watch?v=nE_ZIGhTlrQ&t=2177s
+
 Node.jsのフレームワーク「Express」とは【初心者向け】
 https://magazine.techacademy.jp/magazine/16119
 
